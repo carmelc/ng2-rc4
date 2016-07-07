@@ -5,7 +5,7 @@ import {TodoService} from "../services/todo.srv";
   template:
     `
     <ul>
-     <li *ngFor="let todo of getTodos()" [hidden]="todoService.isComplete(todo)">
+     <li *ngFor="let todo of getTodos()" [ngClass]="{'complete': todoService.isComplete(todo)}">
       <span>{{todo.value}}</span><button type="button" (click)="todoService.markComplete(todo)">Done</button>
      </li>
     </ul>
