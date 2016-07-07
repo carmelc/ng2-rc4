@@ -4,7 +4,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
   template:
     `<label for="todo-input">Todo: </label><input id="todo-input" type='text' [(ngModel)]="value"/>
     <button type="button" (click)="onAddClicked()">Add</button>
-    <div>{{value}}</div>
     `
 })
 export class TodoInputComponent {
