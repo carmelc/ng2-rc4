@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import {TodoService} from "../services/todo.srv";
 @Component({
   selector: 'todo-input',
   template:
@@ -7,11 +8,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
     `
 })
 export class TodoInputComponent {
-  @Output() onAdd = new EventEmitter();
   value = 'please provide a value';
+  constructor(private todoService: TodoService) {}
 
   onAddClicked() {
-    this.onAdd.emit(this.value);
+    this.todoService.addTodo(this.value);
     this.value = '';
   }
 }
