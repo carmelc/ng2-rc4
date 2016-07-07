@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
   selector: 'todo-input',
   template:
     `<label for="todo-input">Todo: </label><input id="todo-input" type='text' #todoInput />
-    <button type="button" (click)="onAdd(todoInput.value)">Add</button>
+    <button type="button" (contextmenu)="onAdd(todoInput.value, $event)">Add</button>
     `
 })
 export class TodoInputComponent {
-  onAdd(value) {
+  onAdd(value, event) {
+    event.preventDefault();
     console.log(value)
   }
 }
