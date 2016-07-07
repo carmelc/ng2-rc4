@@ -5,12 +5,14 @@ import {TodoService} from "../services/todo.srv";
   template:
     `
     <ul>
-     <li *ngFor="let todo of getTodos()">{{todo.value}}</li>
+     <li *ngFor="let todo of getTodos()" [hidden]="todoService.isComplete(todo)">
+      <span>{{todo.value}}</span><button type="button" (click)="todoService.markComplete(todo)">Done</button>
+     </li>
     </ul>
     `
 })
 export class TodoListComponent {
-  constructor(private todoService: TodoService) {}
+  constructor(public todoService: TodoService) {}
 
   getTodos() {
     return this.todoService.todos;
