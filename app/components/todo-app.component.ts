@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import { TodoInputComponent } from './todo-input.component';
 @Component({
   selector: 'todo-app',
-  template: `<h1>Add a Todo</h1>`
+  template: `<todo-input></todo-input>`,
+  directives: [<any>TodoInputComponent]
 })
 export class TodoAppComponent { }
