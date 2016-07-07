@@ -79,7 +79,7 @@ module.exports = function(config) {
       subPageTitle: __dirname
     },
 
-    port: 8082,
+    port: 8080,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
