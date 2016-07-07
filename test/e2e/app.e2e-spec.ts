@@ -1,7 +1,7 @@
 
 describe('QuickStart E2E Tests', function () {
 
-  let expectedMsg = 'Initial App';
+  let expectedMsg = 'TODO App';
 
 
   beforeEach(function () {

@@ -1,6 +1,6 @@
-Protractor results for: 7/7/2016, 3:38:23 PM
+Protractor results for: 7/7/2016, 3:44:01 PM
 
 AppDir:./
   Suite: QuickStart E2E Tests -- passed
-    passed - should display: Initial App
+    passed - should display: TODO App
 
