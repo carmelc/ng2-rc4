@@ -1,0 +1,6 @@
+Protractor results for: 7/7/2016, 2:45:11 PM
+
+AppDir:./
+  Suite: QuickStart E2E Tests -- passed
+    passed - should display: Initial App
+
