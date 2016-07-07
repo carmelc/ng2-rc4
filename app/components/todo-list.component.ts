@@ -1,13 +1,18 @@
-import { Component, EventEmitter, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import {TodoService} from "../services/todo.srv";
 @Component({
   selector: 'todo-list',
   template:
     `
     <ul>
-     <li *ngFor="let todo of todos">{{todo.value}}</li>
+     <li *ngFor="let todo of getTodos()">{{todo.value}}</li>
     </ul>
     `
 })
 export class TodoListComponent {
-  @Input() todos;
+  constructor(private todoService: TodoService) {}
+
+  getTodos() {
+    return this.todoService.todos;
+  }
 }

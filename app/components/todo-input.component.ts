@@ -12,5 +12,6 @@ export class TodoInputComponent {
 
   onAddClicked() {
     this.onAdd.emit(this.value);
+    this.value = '';
   }
 }
