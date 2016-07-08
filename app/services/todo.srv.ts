@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
 export class TodoService {
   todos: Array<TodoItem> = [];
 
-  addTodo(value) {
+  addTodo(value: string) {
     this.todos.push({value, isDone: false});
   }
 

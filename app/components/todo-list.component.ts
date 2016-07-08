@@ -1,7 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import {TodoService} from "../services/todo.srv";
 @Component({
   selector: 'todo-list',
+  encapsulation: ViewEncapsulation.Native,
+  styles: [`
+    .complete {
+      text-decoration: line-through;
+    }`],
   template:
     `
     <ul>
