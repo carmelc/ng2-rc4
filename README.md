@@ -14,11 +14,11 @@ There is also a todo app branch which provides a better support for an ng2 Todo 
 4. Within Cloud9 editor terminal (bottom of the screen), execture the following commands:
 5. wget https://github.com/carmelc/ng2-rc4/archive/master.zip
 6. unzip master.zip
-7. cd ng2-rc4
+7. cd ng2-rc4-master
 8. npm install
 9. npm start
  
-On the Cloud9 editor toolbar (top of the screen) click "Preview"
+On the Cloud9 editor toolbar (top of the screen) click "Preview" (change the port to 8081)
 You can also access it from an external browser (including another machine) via:
 https://<workspacename>-<username>.c9users.io:8081
 
